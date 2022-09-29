@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Nouveau mot de passe{% endblock %}
+
+{% block body %}
+    <main class="subscribe">
+        <h1>Entrez votre nouveau mot de passe</h1>
+        <div class="create__form">
+            {{ form_start(form) }} 
+            {{ form_widget(form) }}
+            <input type="submit" value="Valider">
+            {{ form_end(form) }}
+        </div>
+    </main>
+{% endblock %}
